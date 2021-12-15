@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="tictactoecss.css">
+</head>
+	
+<body>
+
+	
+	<h1 class="title">Tic Tac Toe</h1>
+	<h3 class="direction" id="rules"> Player 1 is "X" and Player 2 is "O"</h3>
+	<div class="inputField" id="playerInput">
+		<div class="playerName" id="p1">
+			Player 1: <input type="text"  name="Player1"  id="P1Name"  placeholder="Name" size="25" style="height: 23px;">
+		</div>
+		<div class="playerName" id="p2">
+			Player 2: <input type="text"  name="Player2"   id="P2Name"  placeholder="Name" size="25" style="height: 23px;">
+			<div id="updatebtn"><button class="btn" id="btn1" type="button">Start Game</button></div>
+		</div>	
+	</div>
+	<div id="playerturn">
+		<h3 id="input1" class="showInput"></h3>
+		<h3 id="input2" class="showInput"></h3>
+		<h3 id="input3" class="showInput"></h3>
+	</div>
+	
+
+	<div class="container" id="board">
+		<div data-cell-index="0" class="cell"></div>
+		<div data-cell-index="1" class="cell"></div>
+		<div data-cell-index="2" class="cell"></div>
+		<div data-cell-index="3" class="cell"></div>
+		<div data-cell-index="4" class="cell"></div>
+		<div data-cell-index="5" class="cell"></div>
+		<div data-cell-index="6" class="cell"></div>
+		<div data-cell-index="7" class="cell"></div>
+		<div data-cell-index="8" class="cell"></div>
+	</div>
+	<div id="restart"><button class="btn" id="btn2" type="reset">New Game</button></div>
+<script src="tictactoejs.js"></script>
+</body>
+</html>
